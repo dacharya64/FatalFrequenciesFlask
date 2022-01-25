@@ -6,7 +6,7 @@
             <div class="article-metadata">
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
+            <p class="article-content">{{ post.content[0:400] }}</p>
           </div>
         </article>
     {% endfor %}
